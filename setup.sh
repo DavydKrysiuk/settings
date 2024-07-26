@@ -6,3 +6,13 @@ sudo hostnamectl set-hostname --static fedora;
 # Install languages
 
 sudo dnf install golang;
+
+# Setup git
+
+sudo dnf upgrade git;
+echo Git username:
+read gitusername
+git config --global user.name $gitusername
+echo Git email:
+read gitemail
+git config --global user.email $gitemail
