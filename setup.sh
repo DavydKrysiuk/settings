@@ -8,6 +8,7 @@ sudo hostnamectl set-hostname --static fedora;
 sudo dnf install golang;
 mkdir -p $HOME/go
 echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' >> $HOME/.bashrc
 source $HOME/.bashrc
 
 # Setup git
