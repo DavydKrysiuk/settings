@@ -1,2 +1,2 @@
 # settings
-Files for the Fedora Setup
+Just files for my Fedora Setup
