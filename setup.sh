@@ -6,6 +6,9 @@ sudo hostnamectl set-hostname --static fedora;
 # Install languages
 
 sudo dnf install golang;
+mkdir -p $HOME/go
+echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
+source $HOME/.bashrc
 
 # Setup git
 
