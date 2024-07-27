@@ -11,6 +11,16 @@
 
 (ido-mode 0)
 
+(setq
+ ;; archives to install packages from
+ package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+                    ("melpa" . "https://melpa.org/packages/"))
+ ;; packages to have installed
+ package-selected-packages '(go-mode
+			     gruber-darker-theme
+			     smex
+                             magit))
+
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -24,6 +34,6 @@
 (custom-set-faces
  )
 
-
+;; C-u 4 M-x indr
+;; ^ Add tab to selected area
 (defalias 'indr 'indent-rigidly)
-
