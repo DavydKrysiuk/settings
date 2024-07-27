@@ -18,6 +18,10 @@ source $HOME/.bashrc
 sudo dnf install emacs;
 git config --global core.editor emacs
 
+sudo dnf install vim;
+mkdir -p ~/.vim/pack/vendor/start
+mkdir ~/.vim/pack/vendor/opt
+
 sudo dnf upgrade git;
 
 # Setup git
