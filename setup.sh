@@ -34,3 +34,4 @@ then
   git config --global user.email $gitemail
 else
   echo Git setup skipped
+fi
