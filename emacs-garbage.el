@@ -22,8 +22,6 @@
 (column-number-mode 1)
 (show-paren-mode 1)
 
-(setq backup-directory-alist '(("." . "~/.emacs_saves")))
-
 (ido-mode 0)
 
 ;; C-u 4 M-x indr
