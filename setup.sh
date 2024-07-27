@@ -2,7 +2,6 @@
 
 sudo dnf remove firefox gnome-tour gnome-contacts gnome-maps gnome-calendar gnome-connections gnome-weather libreoffice-calc libreoffice-impress libreoffice-writer libreoffice-core;
 sudo hostnamectl set-hostname --static fedora;
-sudo rm -d -r .mozilla
 
 # Install languages
 # Go
@@ -22,8 +21,6 @@ sudo dnf install emacs;
 git config --global core.editor emacs
 
 sudo dnf install vim;
-mkdir -p ~/.vim/pack/vendor/start;
-mkdir ~/.vim/pack/vendor/opt;
 
 sudo dnf upgrade git;
 
@@ -43,3 +40,8 @@ then
 else
   echo Git setup skipped
 fi
+
+
+sudo rm -d -r .mozilla;
+mkdir -p ~/.vim/pack/vendor/start;
+mkdir ~/.vim/pack/vendor/opt;
