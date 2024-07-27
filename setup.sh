@@ -15,6 +15,7 @@ source $HOME/.bashrc
 # Setup git
 
 sudo dnf upgrade git;
+git config --global init.defaultBranch main
 
 echo Setup git? [y/n]
 read setupgit
