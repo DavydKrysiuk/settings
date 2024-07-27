@@ -24,7 +24,7 @@ git config --global init.defaultBranch main
 
 echo Setup git? [y/n]
 read setupgit
-if [$setupgit -eq "y"]
+if [[ "$setupgit" == "y" ]]
 then
   echo Git username:
   read gitusername
