@@ -12,6 +12,10 @@ echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> $HOME/.bashrc
 source $HOME/.bashrc
 
+# Install tools
+
+sudo dnf install emacs;
+
 # Setup git
 
 sudo dnf upgrade git;
