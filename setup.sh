@@ -17,12 +17,11 @@ source $HOME/.bashrc
 sudo dnf install vim;
 git config --global core.editor vim
 mkdir -p ~/.vim/pack/vendor/start
+sudo dnf upgrade git;
 
 # Setup git
 
-sudo dnf upgrade git;
 git config --global init.defaultBranch main
-
 echo Setup git? [y/n]
 read setupgit
 if [[ "$setupgit" == "y" ]]
