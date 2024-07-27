@@ -14,6 +14,7 @@ source $HOME/.bashrc
 
 # Install tools
 
+# https://youtu.be/PKaJoqQQoIA?si=JDbt_pdjAz2TNZtu
 sudo dnf install emacs;
 git config --global core.editor emacs
 
