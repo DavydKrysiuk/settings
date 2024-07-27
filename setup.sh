@@ -14,9 +14,9 @@ source $HOME/.bashrc
 
 # Install tools
 
-sudo dnf install vim;
-git config --global core.editor vim
-mkdir -p ~/.vim/pack/vendor/start
+sudo dnf install emacs;
+git config --global core.editor emacs
+
 sudo dnf upgrade git;
 
 # Setup git
