@@ -32,4 +32,5 @@ then
   echo Git email:
   read gitemail
   git config --global user.email $gitemail
-fi
+else
+  echo Git setup skipped
