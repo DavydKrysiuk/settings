@@ -5,12 +5,15 @@ sudo hostnamectl set-hostname --static fedora;
 sudo rm -d -r .mozilla
 
 # Install languages
-
+# Go
 sudo dnf install golang;
 mkdir -p $HOME/go
 echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> $HOME/.bashrc
 source $HOME/.bashrc
+
+# Haskell
+sudo dnf install haskell-platform
 
 # Install tools
 
