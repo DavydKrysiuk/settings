@@ -12,7 +12,6 @@
      ("melpa" . "https://melpa.org/packages/")))))
 (package-initialize)
 ;; M-x package-refresh-contents
-;; M-x package-install RET haskell-mode
 
 (set-frame-font "Mono 16" nil t)
 
