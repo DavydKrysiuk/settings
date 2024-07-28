@@ -27,3 +27,6 @@
 ;; C-u 4 M-x indr
 ;; ^ Add tab to selected area
 (defalias 'indr 'indent-rigidly)
+
+;; Turn-off delete confirmation
+(setq dired-deletion-confirmer '(lambda (x) t))
