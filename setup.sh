@@ -5,13 +5,16 @@ sudo hostnamectl set-hostname --static fedora;
 
 # Install languages
 # Go
+
 sudo dnf install golang;
 mkdir -p $HOME/go
 echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> $HOME/.bashrc
 source $HOME/.bashrc
+curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s v1.59.1
 
 # Haskell
+
 sudo dnf install haskell-platform
 
 # Install tools
