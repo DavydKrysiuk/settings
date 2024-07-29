@@ -6,12 +6,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("e27c9668d7eddf75373fa6b07475ae2d6892185f07ebed037eedf783318761d7" "1930427eae3d4d830a43fd79fbda76021138b929c243a4e8606cf4f0531ea17c" default))
  '(package-archives
-   (quote
-    (("gnu" . "https://elpa.gnu.org/packages/")
-     ("melpa" . "https://melpa.org/packages/")))))
+   '(("gnu" . "https://elpa.gnu.org/packages/")
+     ("melpa" . "https://melpa.org/packages/")))
  '(package-selected-packages '(go-mode gruber-darker-theme haskell-mode magit)))
 (package-initialize)
+
 ;; M-x package-refresh-contents
 
 (set-frame-font "Mono 16" nil t)
