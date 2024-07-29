@@ -10,6 +10,7 @@
    (quote
     (("gnu" . "https://elpa.gnu.org/packages/")
      ("melpa" . "https://melpa.org/packages/")))))
+ '(package-selected-packages '(go-mode gruber-darker-theme haskell-mode magit)))
 (package-initialize)
 ;; M-x package-refresh-contents
 
@@ -21,6 +22,9 @@
 (scroll-bar-mode 0)
 (column-number-mode 1)
 (show-paren-mode 1)
+(setq x-select-enable-clipboard t)
+
+
 
 (ido-mode 0)
 
