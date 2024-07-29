@@ -26,9 +26,10 @@
 (show-paren-mode 1)
 (setq x-select-enable-clipboard t)
 
-
-
-(ido-mode 0)
+(use-package gruber-darker-theme
+  :ensure t
+  :config
+  (load-theme 'gruber-darker t))
 
 ;; C-u 4 M-x indr
 ;; ^ Add tab to selected area
@@ -36,3 +37,5 @@
 
 ;; Turn-off delete confirmation
 (setq dired-deletion-confirmer '(lambda (x) t))
+(setq-default tab-width 4)
+
