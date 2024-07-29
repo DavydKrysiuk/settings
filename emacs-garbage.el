@@ -16,7 +16,7 @@
 
 ;; M-x package-refresh-contents
 
-(set-frame-font "Mono 16" nil t)
+(set-frame-font "Mono 14" nil t)
 
 (setq default-frame-alist '((undecorated . t)))
 (tool-bar-mode 0)
