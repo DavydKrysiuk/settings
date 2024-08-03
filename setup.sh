@@ -1,6 +1,7 @@
 # Remove all preinstalled dogshit
 
 sudo dnf remove firefox gnome-tour gnome-contacts gnome-maps gnome-calendar gnome-connections gnome-weather libreoffice-calc libreoffice-impress libreoffice-writer libreoffice-core;
+
 sudo hostnamectl set-hostname --static fedora;
 
 # Install languages
@@ -14,9 +15,9 @@ source $HOME/.bashrc
 curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s v1.59.1
 curl -sSfL https://raw.githubusercontent.com/air-verse/air/master/install.sh | sh -s
 
-# C
+# C/C++
 
-sudo dnf install gcc;
+sudo dnf install clang
 
 # Haskell
 
