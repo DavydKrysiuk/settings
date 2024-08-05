@@ -15,6 +15,10 @@ source $HOME/.bashrc
 curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s v1.59.1
 curl -sSfL https://raw.githubusercontent.com/air-verse/air/master/install.sh | sh -s
 
+# Assembly
+
+sudo dnf install nasm
+
 # C/C++
 
 sudo dnf install clang
@@ -28,8 +32,6 @@ sudo dnf install haskell-platform
 # https://youtu.be/PKaJoqQQoIA?si=JDbt_pdjAz2TNZtu
 sudo dnf install emacs;
 git config --global core.editor emacs
-
-sudo dnf install vim;
 
 sudo dnf upgrade git;
 
@@ -52,5 +54,3 @@ fi
 
 
 sudo rm -d -r .mozilla;
-mkdir -p ~/.vim/pack/vendor/start;
-mkdir ~/.vim/pack/vendor/opt;
